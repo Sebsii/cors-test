@@ -10,9 +10,10 @@
 
     </kbd>
     <script>
-    console.log("fetch https://iou-lemon-heiglbacher.herokuapp.com/");
+    const url = "https://iou-lemon-heiglbacher.herokuapp.com/users.json";
+    console.log(url);
 
-    fetch("https://iou-lemon-heiglbacher.herokuapp.com/")
+    fetch(url)
       .then(function(response) {
         console.log("Response wird empfangen");
         return response.json();
@@ -25,7 +26,7 @@
       });   
 
 
-    fetch("https://iou-lemon-heiglbacher.herokuapp.com/")
+    fetch(url)
       .then(function(response) {
         console.log("Response wird empfangen");
         return response.json();
